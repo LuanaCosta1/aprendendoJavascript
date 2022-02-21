@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros</title>
+    <link rel="stylesheet" href="css/estiloBase.css">
+</head>
+<body>
+    <form action="">
+        <div>
+            <div class="rtl">Valor total</div> <br>
+            <input type="text" name="conta" id="valorT" class="entrada">
+        </div>
+        <br>
+        <div>
+            <div class="rtl">Quantidade de parcelas</div> <br>
+            <input type="text" name="conta" id="qtdeP" class="entrada">
+        </div>
+
+        <br>
+        <input type="button" value="Calcular" class="btn btn-green" onclick="calcularJuros()"> <br>
+
+        <div>
+            <div class="rtl">Valor das parcelas</div>
+            <input type="text" name="resul" id="resultado1" readonly class="saida">
+        </div>
+    </form>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>

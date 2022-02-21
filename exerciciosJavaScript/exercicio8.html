@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPOSTO DE RENDA</title>
+    <link rel="stylesheet" href="css/estiloBase.css">
+    <link rel="stylesheet" href="css/estilo8.css">
+    <link rel="stylesheet" href="css/estilo4.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="rtl">IMPOSTO DE RENDA</div> <br>
+        
+        <div class="ent">
+            Registro: <br>
+            <input type="text" id="registro" class="entrada">
+        </div>
+        <br>
+
+        <div class="ent">
+            Nome: <br>
+            <input type="text" id="nome" class="entrada">
+        </div class="ent">
+        <br>
+
+        <div class="ent">
+            Salário: <br>
+            <input type="text" id="salario" class="entrada" onclick="insereObsimposto()">
+            <div class="obs8"></div>
+        </div>
+        <br>
+
+        <input type="button" value="Calcular" class="btn" onclick="impRenda(), removeObsimposto()"> <br>
+
+        <br>
+        <div class="ent">
+            Imposto de Renda:
+            <input type="text" name="resul" id="resultado8" readonly class="saida">
+        </div>
+    </form>
+
+    <script src="js/script8.js"></script>
+</body>
+
+</html>

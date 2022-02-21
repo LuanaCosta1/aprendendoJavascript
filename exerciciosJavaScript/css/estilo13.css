@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+#tabela {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tbl {
+  border: none;
+  padding: 10px;
+  color: black;
+}
+
+td:nth-child(odd) {
+  background-color: #f2ff3a;
+}
+
+td:nth-child(even) {
+  background-color: #ffffff;
+}
+
+td:nth-child(odd),
+td:nth-child(even){
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+} 

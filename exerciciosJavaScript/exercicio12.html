@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO</title>
+    <link rel="stylesheet" href="css/estiloBase.css">
+    <link rel="stylesheet" href="css/estilo12.css">
+</head>
+
+<body>
+    <form action="" id="jogo">
+            <div class="rtl">Tente adivinhar o número!</div> <br>
+            <input type="text" id="numero12" class="entrada" placeholder="Adivinhe :)"></div>
+            <br>
+
+            <br>
+            <input type="button" value="Acertei?" class="btn" onclick=Adiv()> <br>
+
+            <br>
+            <div>
+                <input type="text" name="resul" id="resultado12" readonly class="saida">
+            </div>
+
+            <div class="rtl" id="novamente">Tentar novamente? <br>
+                <input type="button" value=" Sim " class="btn" onclick="novAdiv()">
+                <input type="button" value="Não" class="btn" onclick="limparAdiv()"> <br>
+            </div>
+    </form>
+
+    <script src="js/script12.js"></script>
+</body>
+
+</html>

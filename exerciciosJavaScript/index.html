@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/estilo4.css">
+    <link rel="stylesheet" href="css/estilo6.css">
+    <link rel="stylesheet" href="css/estilo13.css">
+    <link rel="stylesheet" href="css/estilo14.css">
+</head>
+
+<body>
+
+    <h1 id="main-title">Exercícios com JavaScript</h1>
+
+    <!--Exercicio1-->
+    <form action="">
+        <div>
+
+            <div class="rtl">Calcular parcelas</div>
+            <br>
+            <input type="text" name="conta" id="valorT" class="entrada" placeholder="Valor total">
+        </div>
+        <br>
+            <input type="text" name="conta" id="qtdeP" class="entrada" placeholder="Quantidade de parcelas">
+        </div>
+
+        <br>
+        <br>
+        <input type="button" value="Calcular" class="btn btn-green" onclick="calcularJuros()"> <br>
+
+        <div>
+            <div class="rtl">Valor das parcelas</div>
+            <input type="text" name="resul" id="resultado1" readonly class="saida">
+        </div>
+    </form>
+
+
+
+
+    <!--Exercicio2-->
+    <form action="">
+        <div>
+            <div class="rtl">É PAR OU ÍMPAR?</div> <br>
+            <input type="text" id="numero2" class="entrada" placeholder="Digite o número">
+        </div><br>
+        <br>
+        <input type="button" value="Calcular" class="btn" onclick="validarNumero()"> <br>
+
+        <br>
+        <div>
+            <input type="text" name="resul" id="resultado2" readonly class="saida">
+        </div>
+    </form>
+
+
+
+
+    <!--Exercicio3-->
+    <form action="">
+        <div>
+            <div class="rtl">QUAL É O MAIOR?</div> <br>
+            <input type="text" id="num1" class="entrada" placeholder="Digite o primeiro número">
+        </div>
+
+        <br>
+        <input type="text" id="num2" class="entrada" placeholder="Digite o segundo número"><br>
+
+        <br>
+        <input type="button" value="Calcular" class="btn" onclick="maiorIgual()"> <br>
+
+        <br>
+        <div>
+            <input type="text" name="resul" id="resultado3" readonly class="saida">
+        </div>
+    </form>
+
+
+
+
+    <!--Exercicio4-->
+    <form action="">
+        <div class="rtl">ÁREA DO RETÂNGULO</div> <br>
+
+        <input type="text" id="base" class="entrada" placeholder="Digite a base(m)" onclick="insereObs4()"></div>
+        <br>
+
+        <div> <br><input type="text" id="altura" class="entrada" placeholder="Digite a altura(m)"></div> <br>
+        <div class="obs4"></div> <br>
+
+        <input type="button" value="Calcular" class="btn" onclick="areaRetangulo(), removeObs4()"> <br>
+
+        <br>
+        <div>
+            <input type="text" name="resul"  id="resultado4" readonly class="saida">
+        </div>
+    </form>
+
+
+
+
+    <!--Exercicio5-->
+
+    <form action="">
+        <div class="rtl">MÉDIA DO ALUNO</div> <br>
+        <input type="text" id="nota1" class="entrada" placeholder="Digite a primeira nota"></div>
+        <br>
+
+        <div> <br><input type="text" id="nota2" class="entrada" placeholder="Digite a segunda nota"></div>
+        <br>
+
+        <div> <input type="text" id="nota3" class="entrada" placeholder="Digite a terceira nota"></div>
+        <br>
+
+        <input type="button" value="Calcular" class="btn" onclick="calcMedia()"> <br>
+
+        <br>
+        <div>
+            <input type="text" name="resul" id="resultado5" readonly class="saida">
+        </div>
+    </form>
+
+
+
+
+    <!--Exercicio6-->
+    <form action="">
+        <div class="rtl">Condição de pagamento</div> <br>
+        <input type="text" id="preco" class="entrada" placeholder="Digite o preço do produto"></div>
+        <br>
+
+        <div class="rot2">
+            <br><input type="radio" id="conP" class="op" name="opc">À vista (10% de desconto)
+            <br><input type="radio" id="conP2" class="op" name="opc">Cartão (5% de desconto)
+            <br><input type="radio" id="conP3" class="op" name="opc">Parcelado (10% de aumento)
+        </div> <br>
+
+
+        <input type="button" value="Calcular" class="btn" onclick="condPag()"> <br>
+
+        <br>
+        <div>
+            <input type="text" name="resul" id="resultado6" readonly class="saida">
+        </div>
+    </form>
+
+
+
+    <!--Exercicio7-->
+    <form action="">
+        <div class="rtl">IMC</div> <br>
+        <input type="text" id="altura" class="entrada" placeholder="Digite a altura"></div>
+        <br><br>
+        <div><input type="text" id="peso" class="entrada" placeholder="Digite o peso"></div>
+        <br>
+        <div>
+            <input type="radio" id="sexoM" class="opc" name="opc"> M
+            <input type="radio" id="sexoF" class="opc" name="opc"> F
+        </div>
+
+        <input type="button" value="Calcular" class="btn" onclick="imc()"> <br>
+
+        <br>
+        <div>
+            <input type="text" name="resul" id="resultado7" readonly class="saida">
+        </div>
+    </form>
+
+
+    <!--Exercicio8-->
+    <form action="">
+        <div class="rtl">IMPOSTO DE RENDA</div> <br>
+
+        <div class="ent rtl">
+            Registro: <br>
+            <input type="text" id="registro" class="entrada">
+        </div>
+        <br>
+
+        <div class="ent rtl">
+            Nome: <br>
+            <input type="text" id="nome" class="entrada">
+        </div class="ent">
+        <br>
+
+        <div class="ent rtl">
+            Salário: <br>
+            <input type="text" id="salario" class="entrada" onclick="insereObsimposto()">
+            <div class="obs8"></div>
+        </div>
+        <br>
+
+        <input type="button" value="Calcular" class="btn" onclick="impRenda(), removeObsimposto()"> <br>
+
+        <br>
+        <div class="ent">
+            <input type="text" name="resul" id="resultado8" readonly class="saida">
+        </div>
+    </form>
+
+
+    <!--Exercicio9-->
+    <form action="">
+        <div class="rtl">CALCULADORA</div> <br>
+        <input type="text" id="n1" class="entrada" placeholder="Digite o primeiro número"></div>
+        <br>
+
+        <div>
+            <br><input type="text" id="n2" class="entrada" placeholder="Digite o segundo número"></div>
+        <br>
+
+        <input type="button" value=" + " class="btn" onclick="calcAdic()">
+        <input type="button" value=" - " class="btn" onclick="calcSub()">
+        <input type="button" value=" * " class="btn" onclick="calcMul()">
+        <input type="button" value=" / " class="btn" onclick="calcDiv()">
+
+        <br> <br>
+        <div>
+            <input type="text" name="resul" id="resultado9" readonly class="saida">
+        </div>
+    </form>
+
+
+
+    <!--Exercicio10-->
+
+    <body>
+        <form action="">
+            <div class="rtl">FATORIAL</div> <br>
+            <input type="text" id="numero10" class="entrada" placeholder="Digite o número"></div>
+            <br> <br>
+
+            <input type="button" value="Calcular" class="btn" onclick="calcFatorial()"> <br>
+
+            <br>
+            <div>
+                <input type="text" name="resul" id="resultado10" readonly class="saida">
+            </div>
+        </form>
+
+
+
+
+        <!--Exercicio11-->
+        <form action="">
+            <div class="rtl">SOMA DE NÚMERO INTEIRO E POSITIVO</div> <br>
+            <input type="text" id="numero11" class="entrada" placeholder="Digite um número inteiro e positivo"></div>
+            <br> <br>
+
+            <input type="button" value="Calcular" class="btn" onclick="somaNum()"> <br>
+
+            <br>
+            <div>
+                <input type="text" name="resul" id="resultado11" readonly class="saida">
+            </div>
+        </form>
+
+
+
+        <!--Exercicio12-->
+        <form action="" id="jogo">
+            <div class="rtl">Tente adivinhar o número!</div> <br>
+            <input type="text" id="numero12" class="entrada" placeholder="Adivinhe :)"></div>
+            <br>
+
+            <br>
+            <input type="button" value="Acertei?" class="btn" onclick=Adiv()> <br>
+
+            <br>
+            <div>
+                <input type="text" name="resul" id="resultado12" readonly class="saida">
+            </div>
+
+            <div class="rtl" id="novamente">Tentar novamente? <br>
+                <input type="button" value=" Sim " class="btn" onclick="novAdiv()">
+                <input type="button" value="Não" class="btn" onclick="limparAdiv()"> <br>
+            </div>
+        </form>
+
+        
+
+        <!--Exercicio13-->
+        <div id="formulario">
+            <form method="post" action="">
+                <div class="rtl">Criar tabela</div><br>
+                <input type="text" id="linha" class="entrada" placeholder="Digite a quantidade de linhas"/> <br> <br>
+                <input type="text" id="coluna"  class="entrada"placeholder="Digite a quantidade de colunas"/> <br> <br>
+                <input type="button" id="button1"  class="btn" value="Criar tabela"></input>
+            </form>
+            <div id="tabela"></div>
+        </div>
+    
+        
+
+        <!--Exercicio14-->
+        <div id="txt_modificado">
+            <form action="">
+                <div class="rtl"> Editor de texto: </div> <br>
+                <input type="text" id="txt"  class="entrada" placeholder="Digite seu texto"> <br><br>
+                <input type="button" id="mais"  class="btn" value="Maiúscula" onclick="txtMaiuscula()">
+                <input type="button" id="sep"  class="btn" value="Separar" onclick="txtSeparar()"><br>
+                <div id="txtSaida">
+                </div>
+            </form> <br>
+        </div>
+
+
+
+
+        
+
+        <script src="js/script1.js"></script>
+        <!--Parcelas-->
+        <script src="js/script2.js"></script>
+        <!--Par ou ímpar-->
+        <script src="js/script3.js"></script>
+        <!--Maior-->
+        <script src="js/script4.js"></script>
+        <!--retangulo-->
+        <script src="js/script5.js"></script>
+        <!--Média-->
+        <script src="js/script6.js"></script>
+        <!--pagamento-->
+        <script src="js/script7.js"></script>
+        <!--IMC-->
+        <script src="js/script8.js"></script>
+        <!--Imposto-->
+        <script src="js/script9.js"></script>
+        <!--Calculadora-->
+        <script src="js/script10.js"></script>
+        <!--Fatorial-->
+        <script src="js/script11.js"></script>
+        <!--Soma-->
+        <script src="js/script12.js"></script>
+        <!--Adivinhe-->
+        <script src="js/script13.js"></script>
+        <!--Criacao de tabela-->
+        <script src="js/script14.js"></script>
+        <!--Editor texto-->
+
+        <p id="made">Feito por: Luana Costa</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="wave"><path fill="#ffd700" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,112C384,96,480,96,576,133.3C672,171,768,245,864,245.3C960,245,1056,171,1152,144C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </body>
+
+</html>

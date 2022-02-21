@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição de pagamento</title>
+    <link rel="stylesheet" href="css/estiloBase.css">
+    <link rel="stylesheet" href="css/estilo6.css">
+</head>
+
+<body>
+    <form action="">
+            <div class="rtl">Condição de pagamento</div> <br>
+            <input type="text" id="preco" class="entrada" placeholder="Digite o preço do produto"></div>
+            <br>
+
+            <div class="rot2"> 
+                <br><input type="radio" id="conP" class="op" name="opc">À vista (10% de desconto) 
+                <br><input type="radio" id="conP2" class="op" name="opc">Cartão (5% de desconto)   
+                <br><input type="radio" id="conP3" class="op" name="opc">Parcelado (10% de aumento)
+            </div> <br>
+
+
+            <input type="button" value="Calcular" class="btn" onclick="condPag()"> <br>
+
+            <br>
+            <div>
+                <input type="text" name="resul" id="resultado6" readonly class="saida">
+            </div>
+    </form>
+
+    <script src="js/script6.js"></script>
+</body>
+
+</html>

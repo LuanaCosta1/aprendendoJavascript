@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#pesquisa {
+    margin: 10px;
+}
+
+#propNome, #btn{
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.card{
+    width: 250px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#Leve{
+    background-color: #D1E7F6;
+    border: 1px solid #0099ff;
+}
+#Média{
+    background-color: #FFCC99;
+    border: 1px solid #ff8000;
+}
+#Grave{
+    background-color: #FF7C80;
+    border: 1px solid #ff0008;
+}
+#Gravíssima{
+    background-color: #7F7F7F;
+    border: 1px solid #000000;
+}
+
+#nome{
+    text-align: center;
+    width: 100%;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.info{
+    text-align: left;
+    padding: 10px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+}
+
+.valormulta{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}

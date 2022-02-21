@@ -1,0 +1,111 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.title{
+  color: #fff;
+  text-shadow: 2px 2px 0px rgb(132, 0, 255);
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+#formulario {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  box-shadow: 0 1px 10px rgb(150, 150, 150);
+}
+
+input,
+select {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 14pt;
+}
+
+input{
+  width: 30%;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 16px 16px;
+  font-size: 14pt;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#resultado {
+  padding: 10px;
+}
+
+hr{
+  border: none;
+
+}
+
+#resultado{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin: 10px;
+  width: 30%;
+  min-height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgb(83, 83, 83);
+  background-color: #fff;
+}
+
+.conteudo{
+  padding: 10px;
+  font-size: 14pt;
+}
+
+.title-cont{
+  font-weight: bold;
+  display: inline;
+}
+
+.titulo {
+  color: #fff;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background-color: #000;
+  padding: 10px;
+}
+
+.classificacao{
+  padding:10px;
+  margin:0px;
+  background-color: rgb(132, 0, 255);
+  color: #fff;
+  list-style:none;
+  text-align: center;
+}
+
+.classificacao li{
+  display: inline;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.card li{
+  list-style:none;
+}
+
+.card .conteudo .title-cont{
+  margin-bottom: 10px;
+}
