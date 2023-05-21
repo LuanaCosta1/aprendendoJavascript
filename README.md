@@ -5,7 +5,9 @@ Projetos simples com JavaScript puro.
 
 ## projBiblioteca:
 Consiste em uma biblioteca virtual com uma caixa de pesquisa, sendo possivel realizar a busca tanto por titulo do livro quanto por classificação
-projDetran:
+
+
+## projDetran:
 Consiste em uma lista com infratores com uma caixa de pesquisa, sendo possivel realizar a busca por nome, o que retorna os dados do infrator e o valor da multa.
 
 ## Exercícios simples com HTML, CSS e JavaScript
